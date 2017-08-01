@@ -1,0 +1,14 @@
+version: "2"
+services:
+  jamboree:
+    build: ./jamboree
+    ports: ["5001:5000"]
+  chembl:
+    build: ./chembl
+    ports: ["5002:5000"]
+  cbioportal:
+    build: ./cbioportal
+    ports: ["5003:5000"]
+  rcsb:
+    build: ./rcsb
+    ports: ["5004:5000"]
